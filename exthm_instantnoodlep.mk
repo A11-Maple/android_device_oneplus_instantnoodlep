@@ -21,20 +21,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from instantnoodlep device
 $(call inherit-product, device/oneplus/instantnoodlep/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common exTHm stuff.
+$(call inherit-product, vendor/exthm/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_instantnoodlep
+PRODUCT_NAME := exthm_instantnoodlep
 PRODUCT_DEVICE := instantnoodlep
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := IN2023
+PRODUCT_MODEL := IN2020
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus8Pro \
-    PRODUCT_NAME=OnePlus8Pro_EEA \
+    PRODUCT_NAME=OnePlus8Pro \
     PRIVATE_BUILD_DESC="OnePlus8Pro-user 11   release-keys"
 
 BUILD_FINGERPRINT := OnePlus/OnePlus8Pro/OnePlus8Pro:10/QKQ1.191222.002/2005301332:user/release-keys
