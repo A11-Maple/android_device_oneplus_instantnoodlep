@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/instantnoodlep/device.mk)
 
 # Inherit some common exTHm stuff.
-$(call inherit-product, vendor/exthm/config/common_full_phone.mk)
+$(call inherit-product, vendor/exthm/config/common.mk)
 
 PRODUCT_NAME := exthm_instantnoodlep
 PRODUCT_DEVICE := instantnoodlep
